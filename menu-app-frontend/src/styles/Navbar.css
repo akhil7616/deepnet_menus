@@ -1,0 +1,110 @@
+/* Navbar container */
+.navbar {
+    width: 100%;
+    background-color: #0D0D0D;
+    padding: 10px 0;
+}
+
+/* Navbar Content */
+.navbar-content {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 35px;
+    margin-right: 10px;
+}
+
+/* Logo Text */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* "DEEP NET" */
+.deep-net {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00A2FF;
+}
+
+/* "SOFT" below "DEEP NET" */
+.soft {
+    font-size: 18px;
+    font-weight: bold;
+    color: #B5B5B5;
+    text-align: left;
+    margin-left: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00A2FF;
+    border-bottom: 2px solid #00A2FF;
+    padding-bottom: 3px;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: #0D0D0D;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 10px;
+        display: block;
+    }
+}

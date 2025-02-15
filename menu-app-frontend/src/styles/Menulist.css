@@ -1,0 +1,147 @@
+.menu-list {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.menu-card {
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-title {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* ✅ Plus Button (same style as menu) */
+.add-menu {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #444;
+    border: 2px dashed white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    min-width: 50px;
+    min-height: 40px;
+}
+
+/* ✅ Modal Form */
+.menu-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-form {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    width: 380px;  /* Slightly wider */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.menu-form h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* ✅ Input Fields */
+.menu-form input,
+.menu-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.menu-form textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* ✅ Form Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Space between buttons */
+    width: 100%;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    background: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    min-width: 100px;
+    text-align: center;
+    transition: background 0.2s ease-in-out;
+}
+
+.form-buttons button:hover {
+    background: #666;
+}
+
+/* ✅ Mobile View */
+@media (max-width: 768px) {
+    .menu-row {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+    }
+
+    .menu-card, .add-menu {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .menu-form {
+        width: 90%; /* Full width on smaller screens */
+        padding: 15px;
+    }
+}

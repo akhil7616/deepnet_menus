@@ -1,0 +1,86 @@
+
+
+.menu-container {
+    width:100%;
+    margin: auto;
+    text-align: center;
+    background-color: #0D0D0D;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+
+
+
+/* new */
+
+
+.content {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    /* background: url("/background.jpg") no-repeat center center/cover; */
+    height: 100vh; /* Ensure full screen */
+}
+
+.menu-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFAFA;
+}
+
+.menu-description {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.add-item-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #0F0E47, #272757); /* Darker Contrast */
+    border: none;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 20px auto; /* Center it horizontally */
+}
+
+.add-item-btn:hover {
+    background: linear-gradient(135deg, #505081, #8686AC); /* Lighter Gradient */
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}

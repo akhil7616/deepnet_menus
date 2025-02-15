@@ -1,0 +1,44 @@
+.head1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px 20px;
+    width: 100%;
+    position: relative;
+}
+
+/* MENU heading */
+.headmenu {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+/* Underline effect similar to the image */
+.headmenu::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 80%;
+    height: 4px;
+    background: #c1272d; /* Red underline */
+    transform: translateX(-50%);
+}
+
+/* Description text */
+.headertext {
+    font-size: 16px;
+    max-width: 700px;
+    margin-top: 15px;
+    color: #c9c9c9;
+    line-height: 1.5;
+    text-align: center;
+}

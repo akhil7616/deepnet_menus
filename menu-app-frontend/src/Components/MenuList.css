@@ -1,0 +1,27 @@
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.menu-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
